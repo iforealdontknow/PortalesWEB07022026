@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+
+       :root {
+            
+            --primary-green: #2d5016;      
+           
+        }
+        .hero {
+            min-height: 100vh;
+            background: url("https://images.unsplash.com/photo-1761839257664-ecba169506c1?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
+            position: relative;
+            color: white;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, .6);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .navbar-custom{
+                 background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+        }
+
+  
+
+      
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Agropecuaria Ponce</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Que ofrecemos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-nosotros">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+    <section class="hero d-flex align-items-center text-center">
+        <div class="container hero-content">
+            <h1 class="display-4 fw-bold mb-3">
+                Servicio AAgropecurio Ponce
+            </h1>
+
+            <p class="lead mb-4">
+                Facilitando el comercio exterior, garantizando seguridad,  y cuidando del Ambiente.
+            </p>
+
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#servicios" class="btn btn-primary btn-lg">
+                    Nuestros Servicios
+                </a>
+                <a href="#contacto" class="btn btn-outline-light btn-lg">
+                    Contactenos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="sobre-nosotros" class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Sobre Nosotros</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded-circle p-3">
+                    <i class="bi bi-clock-history"></i>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Historia</h3>
+                <p>La gropecuaria Ponce nace como un emprendimiento familiar con el objetivo de aprovechar de manera responsable la tierra y los recursos naturales. Desde sus inicios, la empresa se ha dedicado a la producción agropecuaria, combinando la experiencia tradicional del campo con prácticas modernas para garantizar productos de calidad. Con esfuerzo y compromiso, Agropecuaria Ponce ha logrado consolidarse como un apoyo para el desarrollo agrícola y pecuario de la comunidad.
+                </p>
+                <a href="#" class="icon-link">
+                    Saber más...
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded-circle p-3">
+                    <i class=""></i>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Visión</h3>
+                <p>PSer una agropecuaria reconocida por su calidad, responsabilidad y compromiso con el desarrollo sostenible del campo, posicionándose como un referente en el sector agropecuario a nivel regional.
+                <a href="#" class="icon-link">
+                    Saber más...
+                    <i class=""></i>
+                </a>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded-circle p-3">
+                    <i class="bi bi-bullseye"></i>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Misión</h3>
+                <p>Producir y comercializar productos agropecuarios de calidad, aplicando prácticas sostenibles que cuiden el medio ambiente, garanticen el bienestar animal y satisfagan las necesidades de nuestros clientes, contribuyendo al desarrollo del sector agropecuario.</p>
+                <a href="#" class="icon-link">
+                    Saber más...
+                    <i class=""></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="servicios" class="bg-light py-5">
+        <div class="container my-5">
+            <h2 class="text-center mb-2">Que ofrecemos</h2>
+            <p class="text-center text-muted mb-5">
+                Soluciones enfocadas en optimizar procesos logísticos y aduaneros
+            </p>
+
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/jakob-cotton-UQJf6y91zZs-unsplash.jpg" class="card-img-top" alt="Servicio aduanero">
+                        <div class="card-body">
+                            <h5 class="card-title">Acesoramiento personalizado</h5>
+                            <p class="card-text">
+                                Adaptamos nuestros serviciso a sus necesidad.
+                            </p>
+                            <a href="#" class="btn btn-primary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/lomig-HHpRh6rNQMo-unsplash.jpg" class="card-img-top"
+                            alt="Operaciones comerciales">
+                        <div class="card-body">
+                            <h5 class="card-title"> Pesticidad naturales</h5>
+                            <p class="card-text">
+                                Pesticidad anigables con los animales y el ambiente.
+                            </p>
+                            <a href="#" class="btn btn-primary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="img/stijn-te-strake-UdhpcfImQ9Y-unsplash.jpg" class="card-img-top" alt="Reducción de costos">
+                        <div class="card-body">
+                            <h5 class="card-title">Reducción de Costos</h5>
+                            <p class="card-text">
+                                Aplicación de estrategias que permiten disminuir costos operativos
+                                y optimizar el uso de los recursos.
+                            </p>
+                            <a href="#" class="btn btn-primary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Contáctanos</h2>
+                <p class="text-muted mb-0">Somos tu aliado en agropecuaria y cuidado de ganado</p>
+            </div>
+
+        
+            
+            <div class="row g-4 mt-4">
+                <div class="col-12">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h5 id="form-contacto" class="mb-3">Envíanos tu consulta</h5>
+                           
+
+                            <h5 class="card-title mb-3">Agropecuaria Ponce</h5>
+                            <p class="mb-4">Atendemos a nivel  asesorando en tratamientos de suelo y practicas agropecuarias.</p>
+
+                            <div class="d-flex align-items-start gap-3 mb-3">
+                                <i class="bi bi-geo-alt-fill fs-4 text-primary"></i>
+                                <div>
+                                    <div class="fw-semibold">Dirección</div>
+                                    <div class="text-muted">Col. Marisol, La Ceiba, Atlantida, Honduras
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3 mb-3">
+                                <i class="bi bi-envelope-fill fs-4 text-primary"></i>
+                                <div>
+                                    <div class="fw-semibold">Correo</div>
+                                    <a href="mailto:contacto@centrolog.hn"
+                                        class="text-decoration-none">aguerofernando940@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3 mb-3">
+                                <i class="bi bi-telephone-fill fs-4 text-primary"></i>
+                                <div>
+                                    <div class="fw-semibold">Teléfono</div>
+                                    <a href="tel:+50422345678" class="text-decoration-none">+504 9730-8746</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3 mb-3">
+                                <i class="bi bi-clock-fill fs-4 text-primary"></i>
+                                <div>
+                                    <div class="fw-semibold">Horario</div>
+                                    <div class="text-muted">Lun–Vie: 8:00–17:30 · Sáb: 9:00–13:00</div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-2 flex-wrap mt-3">
+                                <a href="https://wa.me/50497308746?text=Hola%2C%20necesito%20asesor%C3%ADa%20Agropecuaria"
+                                    target="_blank" class="btn btn-success">
+                                    <i class="bi bi-whatsapp me-1"></i> WhatsApp
+                                </a>
+                                <a href="tel:+50497308746" class="btn btn-outline-primary">
+                                    <i class="bi bi-telephone-outbound me-1"></i> Llamar
+                                </a>
+                                <a href="#form-contacto" class="btn btn-primary">
+                                    <i class="bi bi-chat-dots me-1"></i> Escribir mensaje
+                                </a>
+                            </div>
+                        
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-light navbar-custom py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Enlaces</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Inicio</a></li>
+                        <li class="nav-item mb-2"><a href="#servicios" class="nav-link p-0 text-white-50">Servicios</a></li>
+                        <li class="nav-item mb-2"><a href="#sobre-nosotros" class="nav-link p-0 text-white-50">Nosotros</a></li>
+                        <li class="nav-item mb-2"><a href="#contacto" class="nav-link p-0 text-white-50">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Recursos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Documentación</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Trámites</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Normativas</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Legal</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Términos</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Privacidad</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Suscríbete a nuestro boletín</h5>
+                        <p>Recibe noticias y actualizaciones mensuales.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Correo electrónico</label>
+                            <input id="newsletter1" type="email" class="form-control"
+                                placeholder="correo@ejemplo.com">
+                            <button class="btn btn-primary" type="button">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2025 Empresa Agropecuaria. Todos los derechos reservados.</p>
+                
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
